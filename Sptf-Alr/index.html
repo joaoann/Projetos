@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./src/styles/main-content.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css">
-    <link rel="stylesheet" href="./src/styles/media_queries.css">z
+    <link rel="stylesheet" href="./src/styles/media_queries.css">
 </head>
 <body>
     <div class="sidebar">
@@ -61,6 +61,16 @@
                     <span>Português do Brasil</span>
                 </button>
             </div>
+
+            <form action="#" class="mudar-estilo">
+                <label>Temas</label>
+                <div>
+                    <input type="submit" onclick="whiteTheme()" class="white-theme" value="">
+                    <input type="submit" onclick="darkTheme()" class="dark-theme" value="">
+                    <input type="submit" onclick="greenTheme()" class="green-theme" value="">
+                    <input type="submit" onclick="blueTheme()" class="blue-theme" value="">
+                </div>
+            </form>
         </nav>
 
     </div>
@@ -222,7 +232,6 @@
                       <a title="Foo Fighters" class="vst" href=""></a>
                       <span class="artist-name" id="artist-name"></span>
                       <span class="artist-categorie">Artista</span>
-                      </a>
                     </div>
                   </div>
                 </div>
@@ -244,6 +253,7 @@
     </footer>
 
     <script type="text/javascript" src="./script.js"></script>
+    <script type="text/javascript" src="./color.js"></script>
 
 </body>
 </html>

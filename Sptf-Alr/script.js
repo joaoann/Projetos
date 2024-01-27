@@ -3,7 +3,7 @@ const playlistContainer = document.getElementById("result-playlists")
 const searchInput = document.getElementById("search-input")
 
 function requestApi(searchTerm) {
-  fetch(`http://localhost:3000/artists?name=${searchTerm}`)
+  fetch(`http://localhost:3000/artists?name_like=${searchTerm}`)
     .then((response) => response.json())
     .then((results) => displayResults(results))
 }
@@ -31,6 +31,5 @@ searchInput.addEventListener("input", function () {
     playlistContainer.classList.remove("hidden")
     return;
   }
-  
   requestApi(searchTerm)
 })

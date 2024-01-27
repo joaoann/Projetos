@@ -1,10 +1,10 @@
 body {
-    background-color: var(--bg-page);
+    background: var(--bg-page);
     font-family: var(--font-dm-sans);
 }
 
 .sidebar__navigation .logo {
-    background-color: var(--bg-nav);
+    background: transparent;
     display: flex;
     border-radius: 8px;
     padding: 16px 0 0 16px;
@@ -45,6 +45,10 @@ body {
     font-size: 14px;
 }
 
+.sidebar__navigation li a:hover {
+    color: var(--bright-color);
+}
+
 .library {
     background-color: var(--bg-nav);
     margin-top: 12px;
@@ -75,6 +79,10 @@ body {
     color: var(--bright-color);
     display: flex;
     flex-direction: column;
+}
+
+.library__playlist button {
+    color: var(--dark-color);
 }
 
 .library__playlist span:nth-child(1) {
@@ -122,6 +130,42 @@ body {
     border-radius: 999px;
     border: 1px solid var(--font-main-color);
 }
+
+.mudar-estilo {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--bright-color);
+    background-color: var(--bg-nav-brighter);
+    margin: 10px;
+    gap: 10px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+}
+
+.mudar-estilo input {
+    height: 30px;
+    width: 30px;
+    border: 2px solid var(--bg-nav);
+}
+
+.white-theme {
+    background: white;
+}
+
+.dark-theme {
+    background: black;
+}
+
+.green-theme {
+    background: green;
+}
+
+.blue-theme {
+   background: #1a32ba; 
+}
+
 
 .advertising {
     position: fixed;

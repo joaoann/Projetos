@@ -57,10 +57,15 @@
     border: 1px solid transparent;
 }
 
+.header__search input::placeholder {
+    color: var(--font-bright-color)
+}
+
 .header__search img {
     width: 16px;
     height: 16px;
     margin-left: 10px;
+    color: var(--font-bright-color)
 }
 
 .header__search input {
@@ -100,7 +105,7 @@
     padding-top: 16px;
     margin: 10px;
     border-radius: 10px;
-    background-color: #121212;
+    background-color: var(--bg-nav);
 }
 
 .playlist {
@@ -159,7 +164,7 @@
 .cards span {
     padding: 16px;
     position: absolute;
-    color: var(--bright-color);
+    color: var(--font-card-color);
     font-size: 24px;
     font-weight: 700;
 }
@@ -238,7 +243,7 @@
 }
 
 .artist-card {
-    background: #181818;
+    background: var(--bg-page);
     border-radius: 8px;
     -ms-flex: 1;
     flex: 1;
@@ -250,7 +255,7 @@
 }
 
 .artist-card:hover {
-    background-color: #252525;
+    background-color: var(--bg-nav-brighter);
 }
 
 .card-img {
@@ -272,7 +277,7 @@
 .card-text {
     display: flex;
     flex-direction: column;
-    color: #fff;
+    color: var(--bright-color);
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -294,7 +299,7 @@
 }
 
 .artist-categorie {
-    color: #6a6a6a;
+    color: var(--font-bright-color);
     font-weight: 400;
     font-size: 0.875rem;
 }
