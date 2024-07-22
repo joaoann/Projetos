@@ -1,4 +1,4 @@
-Projeto em conjunto com a Alura.
+Projeto realizado em um intensivo oferecido pela Alura.
 
 Reconstrução da página inicial do Spotify na Web.
 
